@@ -1,0 +1,201 @@
+﻿:-moz-placeholder {
+    color: red;
+}
+ 
+::-webkit-input-placeholder {
+    color: red;
+}
+*:focus {outline: none;}
+body {
+	font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.MUEBLERIA_REGISTRO h2, .MUEBLERIA_REGISTRO label {
+	font-family:Georgia, Times, "Times New Roman", serif;
+}
+
+.hind_forma, .notificacion_requerida {
+	font-size: 11px;
+}
+
+.MUEBLERIA_REGISTRO ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.MUEBLERIA_REGISTRO li{
+    padding:12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+.MUEBLERIA_REGISTRO li:first-child, .MUEBLERIA_REGISTRO li:last-child {   
+	/*aqui esto pone una linea entre el primer y ultimo elemento en los navegadores modernos */
+
+    border-bottom:1px solid #777;
+}
+
+ /* aqui se modifica el encabezado de la pagina la notificaion se pone del lado derecho como un indicativo y no mas como titulo*/
+.MUEBLERIA_REGISTRO h2 {
+    margin:0;
+    display: inline;
+}
+.notificacion_requerida {
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
+/*aqui se modifica las label y los cuadros de texto se alejan para dar mejor presentacion a la pagina	 */
+/*se hace mas grande el titulo y el espacio se hace mas grande */
+.MUEBLERIA_REGISTRO label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.MUEBLERIA_REGISTRO input {
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+}
+.MUEBLERIA_REGISTRO textarea {
+	padding:8px; width:300px;
+}
+.MUEBLERIA_REGISTRO button {
+	margin-left:156px;
+}
+
+.MUEBLERIA_REGISTRO input, .MUEBLERIA_REGISTRO textarea { 
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+.MUEBLERIA_REGISTRO input:focus, .MUEBLERIA_REGISTRO textarea:focus {
+    background: #fff; 
+    border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+}
+/* Estilos del boton */
+button.submit {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}
+/* aqui se expande el cuadro de texto cuando se selecciona*/
+.MUEBLERIA_REGISTRO input:focus, .MUEBLERIA_REGISTRO textarea:focus { 
+
+    padding-right:70px;
+}
+/* hace la misma funcion que las instrucciones de arriba pero es para los navegadores que no lo soportan */
+
+.MUEBLERIA_REGISTRO input, .MUEBLERIA_REGISTRO textarea { 
+    -moz-transition: padding .25s; 
+    -webkit-transition: padding .25s; 
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+/*apartir de aqui haremos mas uso con los atributos requeridos  aqui agregamos un poco de relleno al lado derecho los cuadros de texto*/
+
+.MUEBLERIA_REGISTRO input, .MUEBLERIA_REGISTRO textarea {
+    padding-right:30px;
+}
+/*aqui agregamos una imagen al lado de todos los atributos obligatorios del formulario*/
+
+input:required, textarea:required {
+    background: #fff url(images/asterisco_rojo.jpg) no-repeat 98% center;
+}
+
+::-webkit-validation-bubble-message {
+    padding: 1em;
+}
+
+
+/*aqui se valida los datos que son invalidos que el nagegador nos lo enseñe */
+.MUEBLERIA_REGISTRO input:focus:invalid, .MUEBLERIA_REGISTRO textarea:focus:invalid { /* when a field is considered invalid by the browser */
+    background: #fff url(images/invalido.jpg) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+.MUEBLERIA_REGISTRO input:required:valid, .MUEBLERIA_REGISTRO textarea:required:valid { /* when a field is considered valid by the browser */
+    background: #fff url(images/valido.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+/* las instrucciones que le dicen al usuario como debe ingresar su información*/
+.hind_forma {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left:8px;
+    padding: 1px 6px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+}
+
+.hind_forma::before {
+    content: "\25C0"; /* left point triangle in escaped unicode */
+    color:#d45252;
+    position: absolute;
+    top:1px;
+    left:-6px;
+}
+
+.MUEBLERIA_REGISTRO input:focus + .hind_forma {display: inline;}
+.MUEBLERIA_REGISTRO input:required:valid + .hind_forma {background: #28921f;} /* change form hint color when valid */
+.MUEBLERIA_REGISTRO input:required:valid + .hind_forma::before {color:#28921f;} /* change form hint arrow color when valid */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MUEBLERIA</title>
+    <link rel="stylesheet" media="screen" href="styles.css" >
+</head>
+<form class="MUEBLERIA_REGISTRO" action="" method="post" name="contact_form">
+
+<ul>
+	<li>
+		<h2>REGISTRO DE USUARIO</h2>
+		<span class="notificacion_requerida"> * Indica campo requerido</span>
+	</li>
+	<li>
+		<label for="nombre">NOMBRE COMPLETO:</label>
+		<input type="text" name="nombre" placeholder="Pancho Villa" required/>
+	</li>
+	<li>
+		<label for="nombre">USUARIO DESEADO:</label>
+		<input type="text" name="nombre" placeholder="brandonk64" required/>
+
+	</li>
+	<li>
+		<label for="nombre">CONTRASEÑA DESEADA:</label>
+		<input type="password" name="nombre" required/>
+	</li>
+	<li>
+		<label for="nombre">DIRECCION:</label>
+		<input type="text" name="direccion" placeholder="calle 17 casa 7 colonia Antonio lopez morales " required/>
+	</li>
+	<li>
+		<label for="nombre">CODIGO POSTAL:</label>
+		<input type="number" name="cod_postal" placeholder="81320" required/>
+	</li>
+	<li>
+		<label for="nombre">RFC:</label>
+		<input type="text" name="RFC" placeholder="AAAA-111111-AA-1" required/>
+	</li>
+	<li>
+	<label for="email">CORREO ELECTRONICO:</label>
+	<input type="email" name="correo" placeholder="pancho@centaurodelnorte.com" required/>
+	<span class="hind_forma">Formato correcto "nombre@algo.com"</span>
+	</li>
+
+	<li>
+	<label for="sitio_web">SITIO WEB:</label>
+	<input type="url" name="sitio_web" placeholder="centaurodelnorte.com" required  pattern="(http|https)://.+"/>
+	<span class="hind_forma">Formato correcto "http:// alguna direccion.com"</span>
+	</li>
+
+
+	<li>
+	<label for="mensaje">INFORMACION ADICIONAL:</label>
+	<textarea name="message" cols="40" rows="6" required ></textarea>
+	 
+	 </li>
+	 <li>
+	 	<button class="submit" type="submit">REGISTRA USUARIO </button>
+	 </li>
+
+
+
+</ul>
+
+
+
+</form>
+<body>
+</body>
+
+</html>
