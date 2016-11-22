@@ -9,17 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var platform_browser_1 = require('@angular/platform-browser');
+var login_component_1 = require('./login.component');
+var LoginModule = (function () {
+    function LoginModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'mi-app',
-            templateUrl: 'app/app.component.html'
+    LoginModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [login_component_1.LoginComponent],
+            bootstrap: [login_component_1.LoginComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], LoginModule);
+    return LoginModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LoginModule = LoginModule;
+//# sourceMappingURL=login.module.js.map
